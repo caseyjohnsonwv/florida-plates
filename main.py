@@ -38,6 +38,7 @@ with open(f"{volume_path}/{output_file}", 'w') as out_f:
                 # validate test case ourselves
                 if len(test) > 7:
                     print(f"Plate '{test}' is too long!")
+                    continue
 
                 # input our test
                 input_field = wd.find_element(by=By.ID, value="MainContent_txtInputRowOne")
