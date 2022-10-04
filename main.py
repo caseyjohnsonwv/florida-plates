@@ -52,7 +52,6 @@ with open(f"{volume_path}/{output_file}", 'w') as out_f:
                 output_value = wd.find_element(by=By.ID, value="MainContent_lblOutPutRowOne").text
                 result = output_value.strip().lower() == "available"
 
-
                 # save result
                 row = [test, len(test), result]
                 writer.writerow(row)
