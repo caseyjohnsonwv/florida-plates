@@ -8,4 +8,11 @@ Using Selenium and Python to check [vanity license plate availability](https://s
 2. Run `docker-compose up --abort-on-container-exit --build`
 3. Check the results in `dat/outputs.csv`.
 
+Sample output:
+```
+PLATE,LENGTH,AVAILABLE
+GWAZI,5,False
+YINZER,6,True
+```
+
 **NOTE:** Florida plates cannot be longer than 7 characters, and many specialty plate designs require 5 characters or fewer. The script will reject entries over 7 characters, but it does not perform further input validation.
